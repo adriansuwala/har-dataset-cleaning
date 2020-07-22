@@ -13,7 +13,6 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 - `README.md` this file describes what is in the repository.
 
 ## Comments about script
-- Resulting file can be read using `read.table` from `readr` package.
 - Uses `tbl_df` class from `dplyr` and `readr` to perform operations in a more readable manner (`%>%`).
 - Uses `lapply` to execute loading function on a vector `(path-to-training-file, path-to-test-file)`. Returns a list where first element has data from training set and second from testing set (for labels both elements are vectors, for features, both are `tbl_df`s)
 - `unlist` collapses list of vectors into a one vector

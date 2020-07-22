@@ -70,5 +70,5 @@ names(grouped) <- c(names(grouped)[[1]], # subject and activity remain the same
                    names(grouped)[[2]],
                    sub("(.*)", "mean-of-\\1", names(grouped)[3:length(grouped)]))
 
-# save `grouped` to a file, read with `read.table` from `readr`
-write.table(grouped, file = "result.table")
+# save `grouped` to a file
+write.table(grouped, file = "result.txt", row.names = FALSE)
