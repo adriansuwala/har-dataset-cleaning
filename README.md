@@ -4,13 +4,13 @@ Repository contains processed data from original UCI ML dataset:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ## Changes
-Training and testing data are merged together.
-Dataset contains averages of all columns regarding mean or standard deviation from the original dataset grouped by subject and activity.
+- Training and testing data are merged together.
+- Dataset contains averages of all columns regarding mean or standard deviation from the original dataset grouped by subject and activity.
 
 ## Content
-`run_analysis.R` is a script that performs all the transformations on the original dataset. Has comments explaining what it does.
-`CodeBook.md` explains what transformations were done on original columns.
-`README.md` this file describes what is in the repository.
+- `run_analysis.R` is a script that performs all the transformations on the original dataset. Has comments explaining what it does.
+- `CodeBook.md` explains what transformations were done on original columns.
+- `README.md` this file describes what is in the repository.
 
 ## Comments about script
 - Resulting file can be read using `read.table` from `readr` package.
